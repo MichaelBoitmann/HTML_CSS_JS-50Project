@@ -59,7 +59,7 @@ h3 {
 
 .cup.cup-small.full {
     background-color: var(--fill-color);
-    color: #fff;
+    color: rgb(163, 44, 44);
 }
 
 .cups {
