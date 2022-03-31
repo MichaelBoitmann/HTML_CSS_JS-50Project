@@ -16,8 +16,8 @@ buttons.forEach(button => {
         circle.style.top = yInside + 'px'
         circle.style.left = xInside + 'px'
 
-        this.appendChild(circle)
+        this.appendChild(circle) // arrow function should not be use to make this work
 
-        setTimeout(() => circle.remove(), 500)
+        setTimeout(() => circle.remove(), 500) // will help remove the saving of click location from the DOM.
     })
 })
