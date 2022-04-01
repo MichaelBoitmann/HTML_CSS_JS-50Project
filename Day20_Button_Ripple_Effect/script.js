@@ -1,23 +1,23 @@
 const buttons = document.querySelectorAll('.ripple')
 
 buttons.forEach(button => {
-    button.addEventListener('click', function (e) {
-        const x = e.clientX
-        const y = e.clientY
+  button.addEventListener('click', function (e) {
+    const x = e.clientX
+    const y = e.clientY
 
-        const buttonTop = e.target.offsetTop
-        const buttonLeft = e.target.offsetLeft
+    const buttonTop = e.target.offsetTop
+    const buttonLeft = e.target.offsetLeft
 
-        const xInside = x - buttonLeft
-        const yInside = y - buttonTop
+    const xInside = x - buttonLeft
+    const yInside = y - buttonTop
 
-        const circle = document.createElement('span')
-        circle.classList.add('circle')
-        circle.style.top = yInside + 'px'
-        circle.style.left = xInside + 'px'
+    const circle = document.createElement('span')
+    circle.classList.add('circle')
+    circle.style.top = yInside + 'px'
+    circle.style.left = xInside + 'px'
 
-        this.appendChild(circle) // arrow function should not be use to make this work
+    this.appendChild(circle) // arrow function should not be use to make this work
 
-        setTimeout(() => circle.remove(), 500) // will help remove the saving of click location from the DOM.
+    setTimeout(() => circle.remove(), 500) // will help remove the saving of click location from the DOM.
     })
 })
