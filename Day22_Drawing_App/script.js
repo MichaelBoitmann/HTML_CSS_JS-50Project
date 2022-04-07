@@ -1,4 +1,4 @@
-// Referenced to Canvas API that provides the means for drawing
+// Referenced to Canvas API that provides the means for
 // drawing graphics via JavaScrip and HTML <canvas> element.
 // link (https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API)
 
@@ -50,6 +50,9 @@ function drawCircle(x, y) {
     ctx.fill()
 }
 
+// This will provide a look of constant circle impression for
+// along the way of drawing.
+
 function drawLine(x1, y1, x2, y2) {
     ctx.beginPath()
     ctx.moveTo(x1, y1)
@@ -62,6 +65,10 @@ function drawLine(x1, y1, x2, y2) {
 function updateSizeOnScreen() {
     sizeEl.innerText = size
 }
+
+// This will change the thickness of the line wich is set
+// to minimum 5 if it is less than 5 and max 50 if it is
+// more than 50.
 
 increaseBtn.addEventListener('click', () => {
     size += 5
