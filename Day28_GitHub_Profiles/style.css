@@ -36,6 +36,10 @@ body {
     box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05), 0 15px 40px rgba(0, 0, 0, 0.1);
 }
 
+.user-form input::placeholder {
+    color: #bbb;
+}
+
 .user-form input:focus {
     outline: none;
 }
@@ -84,10 +88,10 @@ body {
     margin-left: 0.5rem;
 }
 
-.repos {
+.repo {
     text-decoration: none;
     color: #fff;
-    background-color: 212a72;
+    background-color: #212a72;
     font-size: 0.7rem;
     padding: 0.25rem 0.5rem;
     margin-right: 0.5rem;
@@ -100,8 +104,9 @@ body {
         flex-direction: column;
         align-items: center;
     }
+
+    .user-form {
+        max-width: 400px
+    }
 }
 
-.user-form {
-    max-width: 400px
-}
