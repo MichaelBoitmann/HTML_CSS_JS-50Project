@@ -31,7 +31,7 @@ body {
 
 .note {
     background-color: #fff;
-    box-shadow: 0 0 10px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px 4px rgba(0, 0, 0, 0.2);
     margin: 30px 20px;
     height: 400px;
     width: 400px;
@@ -46,7 +46,7 @@ body {
 }
 
 .note .tools button {
-    background-color: transparent #fff;
+    background-color: transparent #9ec862;
     border: none;
     color: #fff;
     cursor: pointer;
