@@ -130,7 +130,7 @@ h4 {
   border-radius: 3px;
   border: none;
   color: aliceblue;
-  padding: 5px;
+  padding: 5px, 10px;
   text-align: center;
   display: inline-block;
   cursor: pointer;
