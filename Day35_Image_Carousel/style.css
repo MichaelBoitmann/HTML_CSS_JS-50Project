@@ -29,7 +29,7 @@ img {
 .image-container {
     display: flex;
     transform: translateX(0);
-    transition: transform 500ms ease-in-out;
+    transition: transform 10s ease-in-out;
 }
 
 .buttons-container {
