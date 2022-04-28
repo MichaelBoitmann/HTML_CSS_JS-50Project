@@ -10,7 +10,7 @@ body {
   font-family: 'Lato', sans-serif;
   display: flex;
   flex-direction: column;
-  align-items: column;
+  align-items: center;
   justify-content: center;
   margin: 0;
 }
@@ -49,6 +49,7 @@ h1 {
 .pokemon .img-container img {
   max-width: 90%;
   margin-top: 20px;
+  
 }
 
 .pokemon .info {
@@ -58,7 +59,7 @@ h1 {
 .pokemon .info .number {
   background-color: rgba(0, 0, 0, 0.1);
   padding: 5px 10px;
-  border-radius:10px;
+  border-radius: 10px;
   font-size: 0.8em;
 }
 
