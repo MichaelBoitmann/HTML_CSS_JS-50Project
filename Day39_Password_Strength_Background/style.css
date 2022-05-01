@@ -1,11 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@1,100&family=Dancing+Script&family=Roboto:wght@700&display=swap');
-
 * {
     box-sizing: border-box;
-}
-
-body {
-    font-family: 'Roboto', sans-serif;
+  }
+  
+  body {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -13,4 +10,17 @@ body {
     height: 100vh;
     overflow: hidden;
     margin: 0;
-}
+  }
+  
+  .background {
+    background: url('https://images.unsplash.com/photo-1556745757-8d76bdb6984b')
+      no-repeat center center/cover;
+    position: absolute;
+    top: -20px;
+    bottom: -20px;
+    left: -20px;
+    right: -20px;
+    z-index: -1;
+    filter: blur(20px);
+  }
+  
