@@ -4,7 +4,7 @@ const listItems = []
 
 getData()
 
-filter.addEventListener('input', (e) => firlterData(e.target.value))
+filter.addEventListener('input', (e) => filterData(e.target.value))
 
 
 async function getData() {
@@ -33,12 +33,12 @@ async function getData() {
     })
 }
 
-function filterData(searchTerm) {
+function filterData(searchLiveUser) {
     listItems.forEach(liveUser => {
-        if(liveUser.innerText.toLowerCase().includes(searchTerm.toLowerCase())) {
-            liveUser.classList.remove('hide')
+        if(liveUser.innerText.toLowerCase().includes(searchLiveUser.toLowerCase())) {
+            liveUser.classList.remove('hide') // 'hide' from style of user-list li
         } else {
-            liveUser.classList>add('hide')
+            liveUser.classList.add('hide')
         }
     })
 }
